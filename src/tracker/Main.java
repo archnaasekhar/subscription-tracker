@@ -5,20 +5,20 @@ public class Main {
         SubscriptionManager manager = new SubscriptionManager();
 
         // Add subscriptions
-        manager.addSubscription(new Subscription("Netflix", 499.0, "2025-09-30"));
-        manager.addSubscription(new Subscription("Spotify", 399.0, "2025-09-08"));
+        manager.addSubscription(new Subscription(1, "Netflix", "Entertainment", 499.0, "2025-09-30", "Monthly"));
+        manager.addSubscription(new Subscription(2, "Spotify", "Music", 399.0, "2025-09-08", "Monthly"));
 
         System.out.println("\n--- Subscriptions ---");
         manager.listSubscriptions();
 
         // Update
-        manager.updateSubscription("Netflix", 599.0, "2025-10-30");
+        manager.updateSubscription(1, 599.0, "2025-10-30");
 
         System.out.println("\n--- After Update ---");
         manager.listSubscriptions();
 
         // Delete
-        manager.removeSubscription("Spotify");
+        manager.removeSubscription(2);
 
         System.out.println("\n--- After Delete ---");
         manager.listSubscriptions();
