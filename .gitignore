@@ -1,29 +1,31 @@
-### IntelliJ IDEA ###
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+# Node modules (if using Node)
+node_modules/
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+# Logs
+*.log
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# Environment variables
+.env
 
-### VS Code ###
+# IDE files
 .vscode/
+.idea/
 
-### Mac OS ###
-.DS_Store
+# Compiled Java files
+*.class
+
+# Package files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Mobile Tools for Java
+.mtj.tmp/
+
+# VM crash logs
+hs_err_pid*
+replay_pid*
