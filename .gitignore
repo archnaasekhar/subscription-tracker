@@ -1,20 +1,11 @@
-# Node modules (if using Node)
-node_modules/
+# ============================
+# Java / IntelliJ .gitignore
+# ============================
 
-# Logs
-*.log
-
-# Environment variables
-.env
-
-# IDE files
-.vscode/
-.idea/
-
-# Compiled Java files
+# Compiled Java class files
 *.class
 
-# Package files
+# Package archives
 *.jar
 *.war
 *.nar
@@ -29,3 +20,26 @@ node_modules/
 # VM crash logs
 hs_err_pid*
 replay_pid*
+
+# IntelliJ IDEA project files
+.idea/
+*.iml
+out/
+
+# VS Code settings (if project opened there)
+.vscode/
+
+# Logs
+*.log
+
+# Environment / Secrets
+.env
+# Hide the real database config file (contains password)
+src/config.properties
+
+# Node modules (for frontend if any)
+node_modules/
+
+# Mac / Windows system files
+.DS_Store
+Thumbs.db
